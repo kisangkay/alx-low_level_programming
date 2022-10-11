@@ -1,13 +1,24 @@
-/* start by including the header file that contains the used variables */
-include "main.h"
+#include "main.h"
 
-/*declare the local variables*/
-char *char_memset (char *s,char b, unsigned int n){
+/**
+ * *_memset - fills memory with a constant byte
+ * declare the local variables
+ * @s: is the pointer to put the constant
+ * @b: is the constant
+ * @n: is the number of byte
+ * Return: s
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
 	unsigned int i;
 
-	/*for loop to keep asigning the bytes */
-	for (i=0;n>0;i++;n--){
-		s[i]=b;
-}
-return s;
+
+	for (i = 0; n > 0; i++; n--)
+	{
+		s[i] = b;
+	}
+
+	return (s);
+
 }
